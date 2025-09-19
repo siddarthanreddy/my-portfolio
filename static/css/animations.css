@@ -1,0 +1,59 @@
+/* animations.css — starfield, nebula, moon orbit, reveal animations
+   Place in: static/css/animations.css
+*/
+
+/* Starfield: use layered subtle textures */
+.stars {
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 30%),
+              url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-size: cover;
+  z-index:-3;
+  opacity:0.9;
+  animation: parallaxStars 140s linear infinite;
+}
+
+/* subtle parallax movement */
+@keyframes parallaxStars {
+  from { transform: translate3d(0,0,0) }
+  to   { transform: translate3d(-800px,-450px,0) }
+}
+
+/* Nebula glow overlay (cyber gradient) */
+.cyber-bg {
+  position: fixed; inset:0; z-index:-4; pointer-events:none;
+  background: radial-gradient(600px 400px at 10% 30%, rgba(124,77,255,0.08), transparent 12%),
+              radial-gradient(500px 360px at 80% 70%, rgba(0,229,255,0.04), transparent 14%);
+  mix-blend-mode: screen;
+}
+
+/* Moon orbit (small glowing orb that orbits) */
+.moon{
+  width:110px;height:110px;border-radius:50%;
+  position:fixed; top:18%; left:56%; z-index:-1;
+  background: radial-gradient(circle at 35% 30%, #ffffffaa, #ffffff55 10%, transparent 30%), 
+              radial-gradient(circle at 70% 70%, rgba(255,255,255,0.08), transparent 20%);
+  box-shadow: 0 6px 40px rgba(124,77,255,0.08), inset 0 -6px 20px rgba(0,0,0,0.35);
+  transform-origin: -200px -50px;
+  animation: orbit 28s linear infinite;
+}
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+  50% { transform: rotate(180deg) translateX(0px) rotate(-180deg); }
+  100% { transform: rotate(360deg) translateX(0px) rotate(-360deg); }
+}
+
+/* Reveal on scroll */
+.reveal{opacity:0; transform: translateY(18px); transition: all .7s cubic-bezier(.2,.9,.3,1); will-change:transform,opacity}
+.reveal.visible{opacity:1; transform: none}
+
+/* small twinkle animation for neon titles */
+.glow{
+  color:var(--neon-2);
+  text-shadow: 0 6px 36px rgba(0,229,255,0.08), 0 0 12px rgba(0,229,255,0.06);
+  animation: subtleGlow 3.8s infinite;
+}
+@keyframes subtleGlow {
+  0% { filter: drop-shadow(0 0 0 rgba(0,229,255,0)); transform: translateY(0) }
+  50% { filter: drop-shadow(0 14px 40px rgba(0,229,255,0.06)); transform: translateY(-2px) }
+  100% { filter: drop-shadow(0 0 0 rgba(0,229,255,0)); transform: translateY(0) }
+}

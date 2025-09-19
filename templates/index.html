@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Siddarthan Reddy | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+
+  <!-- 🌌 Neon Background -->
+  <div class="cyber-bg"></div>
+  <div class="stars"></div>
+
+  <!-- 🔝 Navbar -->
+  <header class="cyber-header">
+    <div class="logo">Siddu<span class="neon">Dev</span></div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🏠 Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1><span class="neon">Siddarthan Reddy</span></h1>
+      <p class="glow">🚀 Full Stack Developer | Python | Flask | React | Cloud</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-neon">View Projects</a>
+        <a href="#contact" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+  <div class="hero-img">
+  <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+</div>
+
+
+  </section>
+
+  <!-- 👨‍💻 About -->
+<section id="about" class="section glass">
+  <h2>About Me</h2>
+  <p>👋 Hello, I am <span class="neon">Siddarthan Reddy</span>, a passionate Full Stack Developer with a strong focus on building interactive and user-friendly web applications. Over the past few years, I have honed my skills in <span class="neon">Python, Flask, MySQL, React, HTML, CSS, JavaScript</span>, creating projects that not only function efficiently but also provide a seamless user experience.</p>
+  <p>💡 I enjoy solving complex problems and transforming ideas into digital products that make an impact. My journey into development began with a curiosity for technology, and today it has grown into a mission of continuous learning and innovation. I love exploring <span class="neon">design thinking, public speaking, and video editing</span>, which makes me unique as I combine both technical and creative skills in my work.</p>
+  <p>🛠 I strongly believe in writing clean, maintainable code and following best practices. Beyond coding, I enjoy collaborating with teams, mentoring peers, and contributing to meaningful projects. I am driven by the idea of creating applications that simplify life for users and help them learn, shop, or interact in smarter ways.</p>
+  <p>🚀 My ultimate goal is to become a highly impactful developer who not only builds products but also inspires and empowers others in the tech community.</p>
+</section>
+<!-- 🛠 Skills -->
+<section id="skills" class="section glass">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🐍</div>
+      <h3>Python</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+      <p>Backend, Scripting, Automation</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">⚛</div>
+      <h3>React</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+      <p>Frontend Development, SPA</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">☁</div>
+      <h3>Cloud</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+      <p>AWS, Deployment, Scalability</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🗄</div>
+      <h3>SQL</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+      <p>Database Design & Queries</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🎨</div>
+      <h3>UI/UX</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+      <p>Design Thinking & Wireframes</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🎬</div>
+      <h3>Video Editing</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 65%;"></div></div>
+      <p>Content Creation & Editing</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🗣</div>
+      <h3>Public Speaking</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+      <p>Workshops & Presentations</p>
+    </div>
+
+    <!-- New Skills -->
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🌐</div>
+      <h3>HTML</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+      <p>Markup Language, Semantic Structure</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🎨</div>
+      <h3>CSS</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+      <p>Styling, Animations, Responsive Design</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">💻</div>
+      <h3>JavaScript</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+      <p>Frontend Logic, DOM Manipulation</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🐙</div>
+      <h3>Git</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+      <p>Version Control & Collaboration</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">🚀</div>
+      <h3>Render</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+      <p>Deployment Platform, Hosting Projects</p>
+    </div>
+
+    <div class="skill-card neon-hover">
+      <div class="skill-icon">⚡</div>
+      <h3>Flask</h3>
+      <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+      <p>Backend Development, APIs</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- 📂 Projects -->
+<section id="projects" class="section glass">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- Tech Prep Hub -->
+    <div class="project-card">
+      <h3>💻 Tech Prep Hub</h3>
+      <ul>
+        <li>Innovative e-learning platform designed for students to master programming fundamentals.</li>
+        <li>Frontend: <span class="neon">HTML, CSS, JavaScript</span>; Backend: <span class="neon">Flask, MySQL</span>.</li>
+        <li>Clean and modern UI using <span class="neon">Tailwind CSS</span>.</li>
+        <li>Interactive learning with expandable topics and programming languages.</li>
+        <li>Hands-on experience in database integration, backend APIs, and frontend responsiveness.</li>
+        <li>Platform can scale into a full-fledged learning management system.</li>
+        <li>Focuses on both theory and practice to enhance student understanding.</li>
+        <li>Teaches core programming concepts in Python and Java.</li>
+        <li>Emphasizes usability, accessibility, and learner engagement.</li>
+        <li>Live Demo: <a href="https://tech-prep-hub-djse.onrender.com/" target="_blank" class="btn-neon">Click Here</a></li>
+      </ul>
+    </div>
+
+    <!-- E-Commerce Website -->
+    <div class="project-card">
+      <h3>🛒 E-Commerce Website</h3>
+      <ul>
+        <li>Complete online shopping platform with cart and checkout functionality.</li>
+        <li>Frontend: <span class="neon">HTML, CSS, JavaScript</span>; Backend: <span class="neon">Flask, MySQL</span>.</li>
+        <li>Dynamic product listings and responsive product grids.</li>
+        <li>User authentication and secure session management.</li>
+        <li>Shopping cart logic and order storage handled efficiently.</li>
+        <li>Learned data security, optimized database queries, and scalable backend design.</li>
+        <li>Simulates real-world e-commerce operations like Flipkart/Amazon.</li>
+        <li>Focus on both usability and performance for smooth user experience.</li>
+        <li>Enhanced understanding of web application workflows.</li>
+        <li>Live Demo: <a href="https://ecommerce-3-q08y.onrender.com/" target="_blank" class="btn-neon">Click Here</a></li>
+      </ul>
+    </div>
+
+    <!-- Portfolio Website -->
+    <div class="project-card">
+      <h3>🎨 Portfolio Website</h3>
+      <ul>
+        <li>Cyberpunk-inspired personal portfolio built using <span class="neon">Flask, HTML, CSS, JavaScript</span>.</li>
+        <li>Focus on modern UI/UX design with glassmorphism and animations.</li>
+        <li>Reflects personal development journey, skills, projects, and certifications.</li>
+        <li>Dark theme with neon highlights for a futuristic look.</li>
+        <li>Animated elements like stars and rotating moon to engage users.</li>
+        <li>Unique color gradients for each section for visual variety.</li>
+        <li>Professional yet stylish and creative design.</li>
+        <li>Demonstrates ability to merge creativity with technology.</li>
+        <li>Portfolio continues to evolve as new skills and projects are added.</li>
+        <li>Serves as a showcase of technical expertise and design thinking.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+  
+<!-- 💼 Experience -->
+<section id="experience" class="section glass">
+  <h2>Experience</h2>
+  <div class="timeline">
+
+    <!-- AI Intern – Slash Mark -->
+    <div class="exp-card">
+      <h3>AI Intern – Slash Mark (May–Jul 2024)</h3>
+      <p>
+        During my internship at Slash Mark, I worked on Artificial Intelligence projects, focusing primarily on building and training machine learning models. 
+        I gained hands-on experience with Python libraries such as NumPy, Pandas, and scikit-learn, learning to preprocess data, train models, and evaluate performance.
+        I was introduced to real-world datasets and learned how to handle data cleaning, missing values, and feature engineering effectively.
+        This internship enhanced my understanding of supervised and unsupervised learning techniques and gave me insight into deploying AI models.
+        I also collaborated with a team of developers, improving my teamwork and communication skills.
+        Additionally, I learned about version control using Git and project management using collaborative tools.
+        Overall, this internship strengthened my problem-solving abilities and gave me confidence in applying AI solutions to practical problems.
+      </p>
+    </div>
+
+    <!-- UI/UX Trainee – L&T Edutech -->
+    <div class="exp-card">
+      <h3>UI/UX Trainee – L&T Edutech (Apr–Aug 2024)</h3>
+      <p>
+        During my time at L&T Edutech, I focused on User Interface and User Experience design principles. 
+        I learned to design wireframes, mockups, and interactive prototypes using tools like Figma and Adobe XD.
+        My work involved understanding user behavior and creating designs that improved usability and accessibility.
+        I collaborated with developers to ensure the implementation matched the intended design, bridging the gap between design and development.
+        I gained experience in design thinking methodologies, conducting user research, and iterating designs based on feedback.
+        Additionally, I explored color theory, typography, and visual hierarchy to make intuitive and visually appealing interfaces.
+        This internship improved my attention to detail, creativity, and ability to deliver user-focused digital solutions.
+      </p>
+    </div>
+
+    <!-- Data Science Intern – APSSDC -->
+    <div class="exp-card">
+      <h3>Data Science Intern – APSSDC (Feb–May 2024)</h3>
+      <p>
+        At APSSDC, I worked as a Data Science Intern, handling real datasets to extract insights and make data-driven decisions. 
+        I learned to use Python for data analysis, including libraries such as Pandas, Matplotlib, and Seaborn for visualization.
+        I gained experience in exploratory data analysis, statistical modeling, and creating reports for stakeholders.
+        My tasks involved cleaning large datasets, identifying patterns, and presenting findings in an understandable format.
+        I also got exposure to SQL databases for querying and managing structured data efficiently.
+        During this internship, I improved my analytical thinking, problem-solving skills, and the ability to work with large-scale datasets.
+        Overall, this experience enhanced my technical skills while teaching me how to approach complex data challenges practically.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Certifications (updated & accurate) -->
+<section id="certifications" class="section certifications glass">
+  <div class="container">
+    <h2>Certifications</h2>
+
+    <div class="cert-grid">
+      <a class="cert-card neon-left" href="https://drive.google.com/file/d/147RLOkdXsYjFmAdN_-C8b9V4TUSz6szu/view?usp=drivesdk" target="_blank" rel="noopener">
+        <div class="cert-title">HACKERRANK</div>
+        <div class="cert-desc">Python Basic • Problem Solving • SQL Basic • CSS Basic</div>
+        <div class="cert-date">Jul 2025</div>
+      </a>
+
+      <a class="cert-card neon-right" href="https://drive.google.com/file/d/1HDurtp9OMcVZ76AcN__GYipezCRA9lZ5/view?usp=drivesdk" target="_blank" rel="noopener">
+        <div class="cert-title">L&T EDUTECH</div>
+        <div class="cert-desc">Full Stack Foundation (Core Java) • UI/UX</div>
+        <div class="cert-date">Aug 2024</div>
+      </a>
+
+      <a class="cert-card neon-left" href="https://drive.google.com/file/d/1adKNfjCiBHQ72-7q6i1iRw_NMPMvQY7k/view?usp=drivesdk" target="_blank" rel="noopener">
+        <div class="cert-title">W3CX</div>
+        <div class="cert-desc">HTML & CSS</div>
+        <div class="cert-date">Apr 2024</div>
+      </a>
+
+      <a class="cert-card neon-right" href="https://drive.google.com/file/d/1H8_zCBKwhkyTPKH0LwT-aHe3-E75dynn/view?usp=drivesdk" target="_blank" rel="noopener">
+        <div class="cert-title">IBM</div>
+        <div class="cert-desc">AI</div>
+        <div class="cert-date">Aug 2024</div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- 🏆 Achievements -->
+<section id="achievements" class="section glass">
+  <h2>Achievements</h2>
+  <div class="achievement-grid">
+
+    <!-- Achievement 1 -->
+    <div class="achievement-card neon-hover">
+      <h3>🏅 Runner-up – District Level Championship</h3>
+      <p>
+        Secured <span class="neon">Runner-up position</span> in the District Level Championship, 
+        showcasing dedication, discipline, and competitive spirit.  
+        This achievement reflects not only my skills but also my consistency, 
+        hard work, and ability to perform under pressure.
+      </p>
+      <span class="achievement-date">2019</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- 📬 Contact -->
+  <section id="contact" class="section glass">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn-neon">Send</button>
+    </form>
+    <p>Or connect: <br>
+      📧 <b>siddarthanreddy0055@gmail.com</b> <br>
+      🔗 <a href="https://www.linkedin.com/in/siddarthan-reddy-4387a5267" target="_blank">LinkedIn</a> | 
+      💻 <a href="https://github.com/siddarthanreddy" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <!-- 🔻 Footer -->
+  <footer>
+    <p>© 2025 <span class="neon">Siddarthan Reddy</span> | Cyberpunk Portfolio</p>
+  </footer>
+
+</body>
+</html>  
